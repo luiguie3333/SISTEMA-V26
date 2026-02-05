@@ -5,7 +5,7 @@ namespace SISTEMA_V26
 {
     public static class Utilidades
     {
-        // Método para salir de la aplicación
+        
         public static void SalirAplicacion()
         {
             DialogResult resultado = MessageBox.Show(
@@ -20,13 +20,13 @@ namespace SISTEMA_V26
             }
         }
 
-        // Método para salir sin confirmación
+       
         public static void SalirSinConfirmar()
         {
             Application.Exit();
         }
 
-        // Método para volver al login
+        
         public static void VolverAlLogin(Form formularioActual)
         {
             DialogResult resultado = MessageBox.Show(
@@ -37,7 +37,7 @@ namespace SISTEMA_V26
 
             if (resultado == DialogResult.Yes)
             {
-                // Buscar el formulario de login
+                
                 foreach (Form form in Application.OpenForms)
                 {
                     if (form.Name == "Login")
@@ -48,7 +48,7 @@ namespace SISTEMA_V26
                     }
                 }
 
-                // Si no encuentra el login, crea uno nuevo
+                
                 Login loginForm = new Login();
                 loginForm.Show();
                 formularioActual.Close();
