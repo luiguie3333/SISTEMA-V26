@@ -54,5 +54,30 @@ namespace SISTEMA_V26
                 formularioActual.Close();
             }
         }
+
+        public static void ConfigurarCierreSecundario(Form formSecundario, Type tipoFormPrincipal)
+        {
+            formSecundario.FormClosing += (sender, e) =>
+            {
+                foreach (Form form in Application.OpenForms)
+                {
+                    if (form.GetType() == tipoFormPrincipal)
+                    {
+                        form.Show();
+                        break;
+                    }
+                }
+            };
+        }
+
+        
+        public static void ConfigurarCierrePrincipal(Form formPrincipal)
+        {
+            formPrincipal.FormClosing += (sender, e) =>
+            {
+                Application.Exit();
+            };
+        }
     }
+
 }

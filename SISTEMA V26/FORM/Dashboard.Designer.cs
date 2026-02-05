@@ -41,6 +41,7 @@
             this.BTNinventario.TabIndex = 0;
             this.BTNinventario.Text = "INVENTARIO";
             this.BTNinventario.UseVisualStyleBackColor = true;
+            this.BTNinventario.Click += new System.EventHandler(this.BTNinventario_Click);
             // 
             // BTNVenta
             // 

@@ -15,7 +15,7 @@ namespace SISTEMA_V26.FORM
         public Dashboard()
         {
             InitializeComponent();
-            
+            Utilidades.ConfigurarCierrePrincipal(this);
         }
 
         private void Dashboard_Load(object sender, EventArgs e)
@@ -27,6 +27,12 @@ namespace SISTEMA_V26.FORM
         private void BTNSalir_Click(object sender, EventArgs e)
         {
            Utilidades.SalirAplicacion();
+        }
+
+        private void BTNinventario_Click(object sender, EventArgs e)
+        {
+            FormInventario formInventario = new FormInventario();
+            formInventario.Show();
         }
     }
 }
