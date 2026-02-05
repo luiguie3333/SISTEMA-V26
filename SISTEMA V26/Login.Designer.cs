@@ -31,12 +31,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.TXTUsuario = new System.Windows.Forms.TextBox();
-            this.TXTContrasena = new System.Windows.Forms.TextBox();
-            this.BTNIngresar = new System.Windows.Forms.Button();
-            this.BTNLimpiar = new System.Windows.Forms.Button();
             this.BTNSalir = new System.Windows.Forms.Button();
+            this.BTNLimpiar = new System.Windows.Forms.Button();
+            this.BTNIngresar = new System.Windows.Forms.Button();
+            this.TXTContrasena = new System.Windows.Forms.TextBox();
+            this.TXTUsuario = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.btnProbarConexion = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -76,23 +76,34 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "INGRESAR  USUARIO REQUERIDO ";
             // 
-            // label3
+            // BTNSalir
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(48, 126);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(132, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "INGRESE CONTRASEÑA";
+            this.BTNSalir.Location = new System.Drawing.Point(433, 145);
+            this.BTNSalir.Name = "BTNSalir";
+            this.BTNSalir.Size = new System.Drawing.Size(183, 46);
+            this.BTNSalir.TabIndex = 7;
+            this.BTNSalir.Text = "SALIR";
+            this.BTNSalir.UseVisualStyleBackColor = true;
+            this.BTNSalir.Click += new System.EventHandler(this.BTNSalir_Click);
             // 
-            // TXTUsuario
+            // BTNLimpiar
             // 
-            this.TXTUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TXTUsuario.Location = new System.Drawing.Point(51, 71);
-            this.TXTUsuario.Multiline = true;
-            this.TXTUsuario.Name = "TXTUsuario";
-            this.TXTUsuario.Size = new System.Drawing.Size(177, 32);
-            this.TXTUsuario.TabIndex = 3;
+            this.BTNLimpiar.Location = new System.Drawing.Point(433, 93);
+            this.BTNLimpiar.Name = "BTNLimpiar";
+            this.BTNLimpiar.Size = new System.Drawing.Size(183, 46);
+            this.BTNLimpiar.TabIndex = 6;
+            this.BTNLimpiar.Text = "LIMPIAR";
+            this.BTNLimpiar.UseVisualStyleBackColor = true;
+            // 
+            // BTNIngresar
+            // 
+            this.BTNIngresar.Location = new System.Drawing.Point(433, 41);
+            this.BTNIngresar.Name = "BTNIngresar";
+            this.BTNIngresar.Size = new System.Drawing.Size(183, 46);
+            this.BTNIngresar.TabIndex = 5;
+            this.BTNIngresar.Text = "INGRESAR";
+            this.BTNIngresar.UseVisualStyleBackColor = true;
+            this.BTNIngresar.Click += new System.EventHandler(this.BTNIngresar_Click);
             // 
             // TXTContrasena
             // 
@@ -104,32 +115,23 @@
             this.TXTContrasena.Size = new System.Drawing.Size(177, 29);
             this.TXTContrasena.TabIndex = 4;
             // 
-            // BTNIngresar
+            // TXTUsuario
             // 
-            this.BTNIngresar.Location = new System.Drawing.Point(433, 41);
-            this.BTNIngresar.Name = "BTNIngresar";
-            this.BTNIngresar.Size = new System.Drawing.Size(183, 46);
-            this.BTNIngresar.TabIndex = 5;
-            this.BTNIngresar.Text = "INGRESAR";
-            this.BTNIngresar.UseVisualStyleBackColor = true;
+            this.TXTUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TXTUsuario.Location = new System.Drawing.Point(51, 71);
+            this.TXTUsuario.Multiline = true;
+            this.TXTUsuario.Name = "TXTUsuario";
+            this.TXTUsuario.Size = new System.Drawing.Size(177, 32);
+            this.TXTUsuario.TabIndex = 3;
             // 
-            // BTNLimpiar
+            // label3
             // 
-            this.BTNLimpiar.Location = new System.Drawing.Point(433, 93);
-            this.BTNLimpiar.Name = "BTNLimpiar";
-            this.BTNLimpiar.Size = new System.Drawing.Size(183, 46);
-            this.BTNLimpiar.TabIndex = 6;
-            this.BTNLimpiar.Text = "LIMPIAR";
-            this.BTNLimpiar.UseVisualStyleBackColor = true;
-            // 
-            // BTNSalir
-            // 
-            this.BTNSalir.Location = new System.Drawing.Point(433, 145);
-            this.BTNSalir.Name = "BTNSalir";
-            this.BTNSalir.Size = new System.Drawing.Size(183, 46);
-            this.BTNSalir.TabIndex = 7;
-            this.BTNSalir.Text = "SALIR";
-            this.BTNSalir.UseVisualStyleBackColor = true;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(48, 126);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(132, 13);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "INGRESE CONTRASEÑA";
             // 
             // btnProbarConexion
             // 
